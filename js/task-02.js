@@ -17,3 +17,5 @@ const liElements = ingredients.map((ingredient) => {
 });
 
 ul.append(...liElements); //додати всі <li> елементи до списку
+
+console.log(ingredients);

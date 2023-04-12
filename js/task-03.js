@@ -21,3 +21,5 @@ const createGalleryItem = ({ url, alt }) =>
 const galleryMarkup = images.map(createGalleryItem).join(''); //отримуємо масив рядків з розміткою для кожного елементу галереї і масив рядків об'єднується в один рядок за допомогою методу join.
 
 gallery.insertAdjacentHTML('beforeend', galleryMarkup); //вставляємо отриманий рядок з розміткою в кінець елемента ul з класом gallery.
+
+console.log(images);
