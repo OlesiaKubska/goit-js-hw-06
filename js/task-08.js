@@ -8,7 +8,8 @@ loginForm.addEventListener('submit', function(event) {
   // зберігаємо елементи input з відповідними атрибутами name у змінні emailInput та passwordInput
     const emailInput = loginForm.elements.email;
     const passwordInput = loginForm.elements.password;
-
+    passwordInput.setAttribute('autocomplete', 'current-password');
+    
     // перевіряємо, чи всі поля форми заповнені, використовуючи умову if. Якщо хоча б одне поле порожнє, ми виводимо повідомлення з попередженням.
     if (emailInput.value === '' || passwordInput.value === '') {
         alert('All fields must be filled!');
